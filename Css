@@ -1,88 +1,45 @@
 body {
-	margin: 0;
-	font-family: 'Montserrat', sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	background: linear-gradient(to right, #4CAF50, #2196F3);
+    background: linear-gradient(to bottom, #87CEEB, #f0f8ff);
+    background-image: url('https://www.transparenttextures.com/patterns/white-brick-wall.png');
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
 }
 
 .container {
-	text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.weather-card {
-	background-color: rgba(255, 255, 255, 0.95);
-	border-radius: 20px;
-	padding: 20px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease-in-out;
-	width: 450px;
+.form-control {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 5px;
 }
 
-.weather-card:hover {
-	transform: scale(1.05);
+.btn-primary {
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
 }
 
-#city-input {
-	padding: 15px;
-	margin: 10px 0;
-	width: 70%;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	font-size: 16px;
+.btn-primary:hover {
+    background-color: #357ab8;
 }
 
-#city-input:focus {
-	outline: none;
-	border-color: #2196F3;
-}
-
-#city-input::placeholder {
-	color: #aaa;
-}
-
-#city-input-btn {
-	padding: 10px;
-	background-color: #2196F3;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	font-size: 16px;
-	cursor: pointer;
-}
-
-#city-input-btn:hover {
-	background-color: #1565C0;
-}
-
-#weather-info {
-	display: none;
-}
-
-#weather-icon {
-	width: 100px;
-	height: 100px;
-}
-
-#temperature {
-	font-size: 24px;
-	font-weight: bold;
-	margin: 8px 0;
-}
-
-#description {
-	font-size: 18px;
-	margin-bottom: 10px;
-}
-
-#wind-speed {
-	font-size: 16px;
-	color: rgb(255, 0, 0);
-}
-
-#date {
-	font-size: 14px;
-	color: rgb(255, 0, 0);
+#weatherResult {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
